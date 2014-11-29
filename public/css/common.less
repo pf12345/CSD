@@ -1,5 +1,47 @@
+@import "page/variable";
 .title {
 	padding: 20px 20px 0;
 	font-size: 24px;
 	font-weight: 100;
+}
+
+input[type=button] {
+	padding: 8px 10px;
+	background-color: @main-color;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.world_voice {
+	position: fixed;
+	right: 0;
+	-webkit-box-shadow: 0 0 5px 2px #ccc;
+	-moz-box-shadow: 0 0 5px 2px #ccc;
+	box-shadow: 0 0 5px 2px #ccc;
+	height: 400px;
+	width: 300px;
+	bottom: 0;
+	background-color: #fff;
+	.world_voice_content {
+		height: 300px;
+		overflow: auto;
+		p {
+			text-align: left;
+			margin: 10px 10px 0;
+		}
+	}
+	input[type=text] {
+		border: 1px solid #cccccc;
+		width: 250px;
+		padding: 5px 10px;
+	}
+
+	p {
+		text-align: center;
+	}
+	.world_voice_submit {
+		text-align: right;
+		margin: 20px;
+	}
 }

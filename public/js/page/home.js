@@ -43,5 +43,15 @@ $(document).ready(function() {
         asNavFor: ""             //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
     });
 
-    //var socket = io();
+    var socket = io();
+    $('#add_world_voice').click(function(){
+        socket.emit('chat message', $('#world_voice_input').val());
+        $('#world_voice_input').val('');
+        return false;
+    });
+    socket.on('chat message success', function(msg) {
+          if(msg) {
+              $("#world_voice_content").get(0).innerHTML += "<p>"+msg+"</p>";
+          }
+    })
 });

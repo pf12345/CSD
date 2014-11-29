@@ -15,6 +15,8 @@ var sessionStore = new MongoStore({
 });
 
 var app = express();
+var server = http.createServer(app);
+exports.server = server; //用于socket.io
 
 app.use(express.cookieParser('lalala')); //cookie处理
 require("multi-process-session")(app, 'cookie');
@@ -33,7 +35,8 @@ app.configure(function (){
 });
 require('simple-mvc')(app);//配置mvc
 
-
-http.createServer(app).listen(config.port, function(){
+server.listen(config.port, function(){
     console.log('Express server listening on port ' + config.port);
 });
+
+
