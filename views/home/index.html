@@ -1,10 +1,133 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-    <h1>这是csd网站主页</h1>
-</body>
-</html>
+{% extends '../shared/layout.html' %}
+{% block content %}
+<link rel="stylesheet" href="/css/plugin/flexslider.css"/>
+<link rel="stylesheet" href="/css/page/home.css"/>
+<div class="p_container">
+    <div class="h_top">
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="/image/content/adBig1.jpg" alt="slide_01"/>
+                </li>
+                <li>
+                    <img src="/image/content/adBig2.jpg" alt="slide_02"/>
+                </li>
+                <li>
+                    <img src="/image/content/adBig3.jpg" alt="slide_04"/>
+                </li>
+            </ul>
+        </div>
+        <div class="h_p_log_reg">
+            <div class="btns">
+                <input class="current" type="button" value="免费注册"/><input type="button" value="快速登录"/>
+            </div>
+            <div class="home_login">
+                <p><label>账号</label><input type="text" placeholder="邮箱地址"/></p>
+                <p><label>密码</label><input type="password" placeholder="登录密码"/></p>
+                <p><input type="submit" value="立即登录"/></p>
+            </div>
+            <div class="home_register">
+                <p><label>用户</label><input type="text" placeholder="用户名"/></p>
+                <p><label>账号</label><input type="text" placeholder="邮箱地址"/></p>
+                <p><label>密码</label><input type="password" placeholder="登录密码"/></p>
+                <p><input type="submit" value="立即注册"/></p>
+            </div>
+        </div>
+        <p class="clear"></p>
+    </div>
+    <div class="home_container">
+        <div class="today_star">
+            <div class="today_star_title title">
+                <h3>今日明星</h3>
+            </div>
+            <div class="one_star">
+                <img src="/image/content/adBig1.jpg" alt=""/>
+                <div class="one_star_description_cover"></div>
+                <div class="one_star_description">
+                    <span>等爱ing</span><span>27岁</span><span>四川</span>
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <div class="one_star">
+                <img src="/image/content/adBig1.jpg" alt=""/>
+                <div class="one_star_description_cover"></div>
+                <div class="one_star_description">
+                    <span>等爱ing</span><span>27岁</span><span>四川</span>
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <div class="one_star">
+                <img src="/image/content/adBig1.jpg" alt=""/>
+                <div class="one_star_description_cover"></div>
+                <div class="one_star_description">
+                    <span>等爱ing</span><span>27岁</span><span>四川</span>
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <div class="one_star">
+                <img src="/image/content/adBig1.jpg" alt=""/>
+                <div class="one_star_description_cover"></div>
+                <div class="one_star_description">
+                    <span>等爱ing</span><span>27岁</span><span>四川</span>
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <div class="one_star">
+                <img src="/image/content/adBig1.jpg" alt=""/>
+                <div class="one_star_description_cover"></div>
+                <div class="one_star_description">
+                    <span>等爱ing</span><span>27岁</span><span>四川</span>
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <div class="one_star">
+                <img src="/image/content/adBig1.jpg" alt=""/>
+                <div class="one_star_description_cover"></div>
+                <div class="one_star_description">
+                    <span>等爱ing</span><span>27岁</span><span>四川</span>
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <div class="one_star">
+                <img src="/image/content/adBig1.jpg" alt=""/>
+                <div class="one_star_description_cover"></div>
+                <div class="one_star_description">
+                    <span>等爱ing</span><span>27岁</span><span>四川</span>
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <p class="clear"></p>
+        </div>
+        <div class="hot_topic">
+            <div class="hot_topic_title title">
+                <h3>最热话题</h3>
+            </div>
+            <div class="one_topic">
+                茫茫人海，擦肩而过的落寞；大千
+            </div>
+            <div class="one_topic">
+                茫茫人海，擦肩而过的落寞；大千
+            </div>
+            <div class="one_topic">
+                茫茫人海，擦肩而过的落寞；大千
+            </div>
+            <div class="one_topic">
+                茫茫人海，擦肩而过的落寞；大千
+            </div>
+        </div>
+        <div class="message_board">
+            <div class="message_board_title title">
+                <h3>留言板</h3>
+            </div>
+            <div class="message_board_container">
+                  <ul id="messageShpw"></ul>
+                <input type="text" id="message"/>
+                <input type="button" value="添加消息" id="addMessage"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery/jquery.flexslider-min.js"></script>
+<script src="/js/socket/socket.io-1.2.1.js"></script>
+<script src="/js/page/home.js"></script>
+{% endblock %}

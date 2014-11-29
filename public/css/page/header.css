@@ -1,0 +1,42 @@
+.header {
+  background-color: #901a65;
+  height: 60px;
+  width: 100%;
+  color: #ffffff;
+}
+.h_container {
+  width: 1040px;
+  margin: auto;
+}
+.h_nav,
+.h_logo {
+  height: 60px;
+  line-height: 60px;
+}
+.h_nav li {
+  float: left;
+  padding: 0 15px;
+}
+.h_nav li:hover {
+  background-color: #d36da4;
+}
+.h_nav ul,
+.h_nav li,
+.h_nav i,
+.h_nav a {
+  color: #fff;
+}
+.h_nav a {
+  text-decoration: none;
+}
+.h_logo {
+  float: left;
+  font-size: 24px;
+  margin-right: 60px;
+}
+.h_log_reg {
+  float: right;
+}
+.h_log_reg a {
+  margin-right: 10px;
+}

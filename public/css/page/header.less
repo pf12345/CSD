@@ -1,0 +1,41 @@
+@import "variable";
+.header {
+	background-color: @main-color;
+	height: @header-height;
+	width: 100%;
+	color: @header-color;
+}
+.h_container {
+	width: @width;
+	margin: auto;
+}
+.h_nav, .h_logo{
+	height: @header-height;
+	line-height: @header-height;
+}
+.h_nav {
+	li {
+		float: left;
+		padding: 0 15px;
+	}
+	li:hover {
+		background-color: @main-hover-color;
+	}
+	ul, li, i, a {
+		color: #fff;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+.h_logo {
+	float: left;
+	font-size: 24px;
+	margin-right: 60px;
+}
+.h_log_reg {
+	float: right;
+	a {
+		margin-right: 10px;
+	}
+}
