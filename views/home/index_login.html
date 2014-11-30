@@ -1,49 +1,16 @@
 {% extends '../shared/layout.html' %}
 {% block content %}
-<link rel="stylesheet" href="/css/plugin/flexslider.css"/>
 <link rel="stylesheet" href="/css/page/home.css"/>
-<div class="p_container">
-    <div class="h_top">
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-                <li>
-                    <img src="/image/content/adBig1.jpg" alt="slide_01"/>
-                </li>
-                <li>
-                    <img src="/image/content/adBig2.jpg" alt="slide_02"/>
-                </li>
-                <li>
-                    <img src="/image/content/adBig3.jpg" alt="slide_04"/>
-                </li>
-            </ul>
-        </div>
-        <div class="h_p_log_reg">
-            <div class="btns">
-                <input class="current register_free" type="button" value="免费注册"/><input type="button" class="login_fast" value="快速登录"/>
-            </div>
-            <div class="home_login">
-                <p><label>账号</label><input type="text" class="email" placeholder="邮箱地址"/></p>
-                <p><label>密码</label><input type="password" class="pwd" placeholder="登录密码"/></p>
-                <p class="warning">*你输入的格式不正确*</p>
-                <p><input type="submit" value="立即登录"/></p>
-            </div>
-            <div class="home_register">
-                <p><label>用户</label><input class="name" type="text" placeholder="用户名"/></p>
-                <p><label>账号</label><input class="email" type="text" placeholder="邮箱地址"/></p>
-                <p><label>密码</label><input class="pwd" type="password" placeholder="登录密码"/></p>
-                <p class="warning">*你输入的格式不正确*</p>
-                <p><input type="submit" value="立即注册"/></p>
-            </div>
-        </div>
-        <p class="clear"></p>
-    </div>
+<div class="p_container home_login">
+    {% include "../shared/user_left.html" %}
     <div class="home_container">
         <div class="today_star">
             <div class="today_star_title title">
-                <h3>今日明星</h3>
+                <h3>今日推荐</h3>
             </div>
             <div class="one_star">
                 <img src="/image/content/adBig1.jpg" alt=""/>
+
                 <div class="one_star_description_cover"></div>
                 <div class="one_star_description">
                     <span>等爱ing</span><span>27岁</span><span>四川</span>
@@ -52,6 +19,7 @@
             </div>
             <div class="one_star">
                 <img src="/image/content/adBig1.jpg" alt=""/>
+
                 <div class="one_star_description_cover"></div>
                 <div class="one_star_description">
                     <span>等爱ing</span><span>27岁</span><span>四川</span>
@@ -60,6 +28,7 @@
             </div>
             <div class="one_star">
                 <img src="/image/content/adBig1.jpg" alt=""/>
+
                 <div class="one_star_description_cover"></div>
                 <div class="one_star_description">
                     <span>等爱ing</span><span>27岁</span><span>四川</span>
@@ -68,6 +37,7 @@
             </div>
             <div class="one_star">
                 <img src="/image/content/adBig1.jpg" alt=""/>
+
                 <div class="one_star_description_cover"></div>
                 <div class="one_star_description">
                     <span>等爱ing</span><span>27岁</span><span>四川</span>
@@ -76,6 +46,7 @@
             </div>
             <div class="one_star">
                 <img src="/image/content/adBig1.jpg" alt=""/>
+
                 <div class="one_star_description_cover"></div>
                 <div class="one_star_description">
                     <span>等爱ing</span><span>27岁</span><span>四川</span>
@@ -84,14 +55,7 @@
             </div>
             <div class="one_star">
                 <img src="/image/content/adBig1.jpg" alt=""/>
-                <div class="one_star_description_cover"></div>
-                <div class="one_star_description">
-                    <span>等爱ing</span><span>27岁</span><span>四川</span>
-                    <i class="fa fa-comments-o"></i>
-                </div>
-            </div>
-            <div class="one_star">
-                <img src="/image/content/adBig1.jpg" alt=""/>
+
                 <div class="one_star_description_cover"></div>
                 <div class="one_star_description">
                     <span>等爱ing</span><span>27岁</span><span>四川</span>
@@ -100,29 +64,57 @@
             </div>
             <p class="clear"></p>
         </div>
-        <div class="hot_topic">
-            <div class="hot_topic_title title">
-                <h3>最热话题</h3>
+        <div class="friend_dynamic">
+            <div class="friend_dynamic_title title">
+                <h3>好友动态</h3>
             </div>
-            <div class="one_topic">
-                茫茫人海，擦肩而过的落寞；大千
-            </div>
-            <div class="one_topic">
-                茫茫人海，擦肩而过的落寞；大千
-            </div>
-            <div class="one_topic">
-                茫茫人海，擦肩而过的落寞；大千
-            </div>
-            <div class="one_topic">
-                茫茫人海，擦肩而过的落寞；大千
-            </div>
-        </div>
-        <div class="message_board">
-            <div class="message_board_title title">
-                <h3>留言板</h3>
+            <div class="friend_dynamic_list">
+                <div>
+                    <div class="avatar">
+                        <img width="50" height="50" src="/image/avatar/default_avatar.jpg" alt=""/>
+                    </div>
+                    <div class="main_content">
+                        <p class="name"><b>最美的星空</b></p>
+
+                        <p class="content">
+                            做英语阅读的感觉： 我们知道賢鏛是在生活中很重要的。比如在鼙蠻和贎鬍里，有彃燊在罅鷄那里蘩墝，之前他们鏈鴊恆闳嘑傡彚槩滼鞷蕻賤鬡艐倏雫寬褲灣曠隗谡堅鑷蠵。 1， 鞷 在文中的意思？
+                            2，这篇文章的最佳标题？ 3，作者没有告诉我们什么？
+                        </p>
+                        <p class="updateTime">
+                            <span>3小时前更新</span>
+                        </p>
+                        <p class="operate">
+                            <span>转发 30</span><span>赞 20</span><span class="add_reply_btn">评论 5</span>
+                        </p>
+                        <div class="reply">
+                            <div class="reply_avatar">
+                                <img width="25" height="25" src="/image/avatar/default_avatar.jpg" alt=""/>
+                            </div>
+                            <div class="reply_main_content">
+                                <div class="add_reply">
+                                    <p><input type="text"/></p>
+                                    <p><input type="button" value="评论"/></p>
+                                </div>
+                                <div class="reply_content">
+                                    <div class="reply_content_avatar">
+                                        <img width="25" height="25" src="/image/avatar/default_avatar.jpg" alt=""/>
+                                    </div>
+                                    <p><a href="">做英语阅读的感觉</a>： 我们知道賢鏛是在生活中很重要的。</p>
+                                    <div class="reply_operate">
+                                        <span>3小时前更新</span>
+                                        <div>
+                                            <i class="fa fa-thumbs-o-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <p class="clear"></p>
     <div class="world_voice">
         <div class="world_voice_title title">
             <h3>世界喊话</h3>
@@ -133,6 +125,7 @@
         <p>
             <input type="text" id="world_voice_input"/>
         </p>
+
         <p class="world_voice_submit">
             <input type="button" class="btn" id="add_world_voice" value="添加消息"/>
         </p>

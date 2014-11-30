@@ -1,7 +1,3 @@
-.p_container {
-  width: 1040px;
-  margin: 40px auto;
-}
 #main-slider {
   width: 650px;
   height: 350px;
@@ -37,11 +33,13 @@
   color: #fff;
   width: 250px;
   height: 35px;
-  margin-top: 20px;
   cursor: pointer;
 }
 .h_p_log_reg .home_login {
   display: none;
+}
+.h_p_log_reg .home_login input[type=submit] {
+  margin-top: 46px;
 }
 .h_p_log_reg .home_login,
 .h_p_log_reg .home_register {
@@ -116,4 +114,102 @@
 .home_container .message_board_container {
   height: 400px;
   width: 100%;
+}
+.home_login .home_container {
+  width: 800px;
+  float: right;
+  margin: 0;
+}
+.home_login .home_container .one_star {
+  width: 240px;
+}
+.friend_dynamic .friend_dynamic_list {
+  padding: 20px 0 20px 90px;
+  position: relative;
+}
+.friend_dynamic .friend_dynamic_list > div {
+  position: relative;
+}
+.friend_dynamic .friend_dynamic_list .avatar {
+  width: 90px;
+  height: 100%;
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: -70px;
+}
+.friend_dynamic .friend_dynamic_list .main_content {
+  font-size: 14px;
+  padding-right: 20px;
+}
+.friend_dynamic .friend_dynamic_list .main_content p {
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.friend_dynamic .friend_dynamic_list .main_content .operate span {
+  display: inline-block;
+  width: 33%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  font-size: 12px;
+  cursor: pointer;
+}
+.friend_dynamic .friend_dynamic_list .main_content .operate span:hover {
+  color: #901a65;
+}
+.friend_dynamic .friend_dynamic_list .main_content .operate .add_reply_btn {
+  border: none;
+}
+.friend_dynamic .friend_dynamic_list .reply {
+  position: relative;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  display: none;
+}
+.friend_dynamic .friend_dynamic_list .reply .reply_avatar {
+  width: 25px;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.friend_dynamic .friend_dynamic_list .reply .reply_main_content {
+  margin-left: 45px;
+}
+.friend_dynamic .friend_dynamic_list .reply .reply_main_content input[type=text] {
+  border: 1px solid #901a65;
+  height: 40px;
+  width: 100%;
+}
+.friend_dynamic .friend_dynamic_list .reply .reply_main_content .add_reply {
+  text-align: right;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.friend_dynamic .friend_dynamic_list .reply .reply_main_content .add_reply input[type=button] {
+  padding: 8px 20px;
+}
+.friend_dynamic .friend_dynamic_list .reply .reply_main_content .reply_content {
+  padding-left: 45px;
+  position: relative;
+  font-size: 12px;
+}
+.friend_dynamic .friend_dynamic_list .reply .reply_main_content .reply_content .reply_content_avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.friend_dynamic .friend_dynamic_list .reply .reply_main_content .reply_content .reply_operate > div {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+.friend_dynamic .friend_dynamic_list .reply .reply_main_content .reply_content .fa-thumbs-o-up {
+  cursor: pointer;
+}
+.friend_dynamic .friend_dynamic_list .reply .reply_main_content .reply_content .fa-thumbs-o-up:hover {
+  color: #901a65;
 }

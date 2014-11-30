@@ -1,7 +1,19 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+.p_container {
+  width: 1040px;
+  margin: 40px auto;
+}
 .title {
   padding: 20px 20px 0;
   font-size: 24px;
   font-weight: 100;
+}
+.sub_title {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 input[type=button] {
   padding: 8px 10px;
@@ -12,25 +24,51 @@ input[type=button] {
 }
 .world_voice {
   position: fixed;
-  right: 0;
   -webkit-box-shadow: 0 0 5px 2px #ccc;
   -moz-box-shadow: 0 0 5px 2px #ccc;
   box-shadow: 0 0 5px 2px #ccc;
   height: 400px;
   width: 300px;
-  bottom: 0;
+  bottom: -400px;
+  right: -207px;
   background-color: #fff;
+  -webkit-transition: all 600ms linear;
+  -moz-transition: all 600ms linear;
+  -ms-transition: all 600ms linear;
+  -o-transition: all 600ms linear;
+  transition: all 600ms linear;
+}
+.world_voice .world_voice_title {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  padding: 8px 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 -2px 5px 0px #cccccc;
+  -moz-box-shadow: 0 -2px 5px 0px #cccccc;
+  box-shadow: 0 -2px 5px 0px #cccccc;
+  background-color: #fff;
+}
+.world_voice .world_voice_title h3 {
+  font-size: 18px;
+  color: #901a65;
 }
 .world_voice .world_voice_content {
   height: 300px;
   overflow: auto;
+  margin: 20px 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 260px;
+  border: 1px solid #901a65;
 }
 .world_voice .world_voice_content p {
   text-align: left;
   margin: 10px 10px 0;
 }
 .world_voice input[type=text] {
-  border: 1px solid #cccccc;
+  border: 1px solid #901a65;
   width: 250px;
   padding: 5px 10px;
 }
@@ -40,4 +78,65 @@ input[type=button] {
 .world_voice .world_voice_submit {
   text-align: right;
   margin: 20px;
+}
+.warning {
+  color: #d73300;
+  font-size: 12px;
+  visibility: hidden;
+}
+.h_userInfo {
+  width: 200px;
+  float: left;
+}
+.h_userInfo .baseInfo,
+.h_userInfo .listLink {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.h_userInfo .baseInfo p,
+.h_userInfo .listLink p,
+.h_userInfo .baseInfo li,
+.h_userInfo .listLink li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.h_userInfo .baseInfo span {
+  margin-right: 10px;
+}
+.h_userInfo .listLink {
+  text-align: left;
+  position: relative;
+  padding: 10px 0 20px;
+}
+.h_userInfo .listLink li,
+.h_userInfo .listLink h5 {
+  padding: 10px 15px;
+}
+.h_userInfo .listLink .fa-chevron-right {
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+  color: #901a65;
+}
+.h_userInfo .listLink li:hover {
+  background-color: #ededef;
+}
+#showMsg {
+  min-width: 100px;
+  text-align: center;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #d36da4;
+  color: #fff;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -15px;
+  z-index: 255;
+  display: none;
+  line-height: 30px;
+  padding: 0px 20px;
 }

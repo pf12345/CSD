@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="/css/common.css"/>
     <link rel="stylesheet" href="/css/fontIcon/font-awesome.min.css"/>
     <script src="/js/jquery/jquery-1.7.2.min.js"></script>
+    <script src="/js/util.js"></script>
 </head>
 <body>
-    {% include "header.html" %}
+{% include "header.html" %}
 
-    {% block content %}{% endblock %}
+{% block content %}{% endblock %}
+<div id="showMsg"></div>
+<script src="/js/socket/socket.io-1.2.1.js"></script>
+<script src="/js/jquery/jquery.flexslider-min.js"></script>
 </body>
 </html>
