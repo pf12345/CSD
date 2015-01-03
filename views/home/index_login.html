@@ -1,10 +1,10 @@
 {% extends '../shared/layout.html' %}
 {% block content %}
 <link rel="stylesheet" href="/css/page/home.css"/>
-<div class="p_container home_login">
+<div class="p_container home_login clearfix">
     {% include "../shared/user_left.html" %}
     <div class="home_container">
-        <div class="today_star">
+        <div class="today_star clearfix">
             <div class="today_star_title title">
                 <h3>今日推荐</h3>
             </div>
@@ -62,7 +62,6 @@
                     <i class="fa fa-comments-o"></i>
                 </div>
             </div>
-            <p class="clear"></p>
         </div>
         <div class="friend_dynamic">
             <div class="friend_dynamic_title title">
@@ -114,7 +113,6 @@
             </div>
         </div>
     </div>
-    <p class="clear"></p>
     <div class="world_voice">
         <div class="world_voice_title title">
             <h3>世界喊话</h3>

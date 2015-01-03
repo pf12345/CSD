@@ -85,6 +85,19 @@
 
 
   /*
+  	个人设置
+      @param req
+      @param res
+   */
+
+  exports.setprofile = function(req, res) {
+    return res.render("setprofile", {
+      title: "个人设置"
+    });
+  };
+
+
+  /*
       退出登录
    */
 

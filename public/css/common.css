@@ -123,6 +123,17 @@ input[type=button] {
 .h_userInfo .listLink li:hover {
   background-color: #ededef;
 }
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.f_left {
+  float: left;
+}
+.f_right {
+  float: right;
+}
 #showMsg {
   min-width: 100px;
   text-align: center;

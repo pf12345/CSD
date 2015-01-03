@@ -1,0 +1,57 @@
+{% extends '../shared/layout.html' %}
+{% block content %}
+<link rel="stylesheet" href="/css/page/user_setprofile.css"/>
+<div class="p_container user_setProfile clearfix">
+    <div class="f_left nav_list">
+        <ul>
+            <li class="current" data-class="personInfo">个人信息</li>
+            <li data-class="personAvatar">头像设置</li>
+            <li data-class="email_valid">邮箱验证</li>
+            <li data-class="change_pwd">修改密码</li>
+        </ul>
+    </div>
+    <div class="f_right change_content">
+        <div class="personInfo">
+            <p><span>昵称</span><input class="name" type="text"/></p>
+            <p>
+                <span>性别</span>
+                <input id="famale" name="sex" type="radio"/><label for="famale">女</label>
+                <input id="male" name="sex" type="radio"/><label for="male">男</label>
+            </p>
+            <p><span>生日</span><input type="date"/></p>
+            <div><span>学校</span><div id="college"></div></div>
+            <p><span>联系方式</span><input type="text"/></p>
+            <p class="person_qianming">
+                <span>个人签名</span><textarea name="" id="" cols="30" rows="10"></textarea>
+            </p>
+            <p class="save"><input type="button" value="保存"/></p>
+        </div>
+        <div class="personAvatar">
+            <img src="/image/avatar/default_avatar.jpg" width="200" height="200" alt="头像"/>
+            <input type="button" value="上传头像"/>
+        </div>
+        <div class="email_valid">
+            <p>当前邮箱</p>
+            <p>pengfeng91@163.com</p>
+            <p><span>邮箱未验证</span></p>
+            <p><input type="button" value="发送验证邮件"/></p>
+        </div>
+        <div class="change_pwd">
+            <p><span>当前密码</span><input type="password"/></p>
+            <p><span>新密码</span><input type="password"/></p>
+            <p><span>确认密码</span><input type="password"/></p>
+            <p><input type="button" value="保存"/></p>
+        </div>
+    </div>
+</div>
+<script src="/js/page/user.js"></script>
+<script src="/js/province/rightCollege.js"></script>
+<script src="/js/province/rightProvinces.js"></script>
+<script src="/js/province/rightUniversity.js"></script>
+<script src="/js/province/jquery.university.js"></script>
+<script>
+    $(function() {
+        $("#college").jqueryUniversity();
+    });
+</script>
+{% endblock %}

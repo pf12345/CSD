@@ -57,6 +57,15 @@ exports.login_GET_POST = (req, res) ->
 					result: result
 
 ###
+	个人设置
+    @param req
+    @param res
+###
+exports.setprofile = (req, res) ->
+	res.render "setprofile",
+		title: "个人设置"
+
+###
     退出登录
 ###
 exports.signOut = (req, res) ->

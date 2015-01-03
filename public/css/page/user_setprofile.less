@@ -1,0 +1,139 @@
+@import "variable";
+.user_setProfile {
+	.nav_list {
+		background-color: #fff;
+		ul{
+			li {
+				width: 215px;
+				height: 58px;
+				line-height: 60px;
+				border-bottom: 1px solid #e6e8e9;
+				cursor: pointer;
+				padding-left: 45px;
+				border-left: 2px solid #fff;
+				font-size: 14px;
+			}
+			li:hover {
+				color: @main-color;
+			}
+			li.current {
+				border-left: 2px solid @main-color;
+			}
+		}
+	}
+	.personInfo {
+		.person_qianming {
+			height: 160px;
+			span {
+				vertical-align: top;
+			}
+			textarea {
+				border: 1px solid #e6e8e9;
+				width: 417px;
+			}
+		}
+		.save {
+			text-align: center;
+			input[type=button] {
+				width: 417px;
+				margin-left: 20px;
+			}
+		}
+	}
+	.personAvatar,.email_valid, .change_pwd {
+		display: none;
+		padding-top: 30px;
+	}
+	.change_pwd {
+		text-align: center;
+		input[type=button] {
+			width: 417px;
+			margin-left: 110px;
+		}
+	}
+	.change_content {
+		width: 740px;
+		background-color: #fff;
+		padding: 60px 60px;
+		box-sizing: border-box;
+		p {
+			height: 40px;
+			padding-bottom: 30px;
+			line-height: 40px;
+		}
+	}
+	input[type=text],
+	input[type=password],
+	input[type=date] {
+		width: 200px;
+		border: 1px solid #ccc;
+		width: 400px;
+		height: 24px;
+		line-height: 24px;
+		padding: 7px 7px 7px 8px;
+		font-size: 14px;
+		background: #ffffff;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		transition: border-color 0.2s;
+		-webkit-transition: border-color 0.2s;
+		-moz-transition: border-color 0.2s;
+		-o-transition: border-color 0.2s;
+		transition: padding 0.15s;
+		-webkit-transition: padding 0.15s;
+		-moz-transition: padding 0.15s;
+		-o-transition: padding 0.15s;
+		border-color: #d0d6d9;
+	}
+	span {
+		margin-right: 10px;
+		display: inline-block;
+		width: 100px;
+		text-align: right;
+	}
+	label {
+		margin-left: 5px;
+	}
+	.personAvatar {
+		text-align: center;
+		img {
+			vertical-align: middle;
+		}
+		input[type=button] {
+			vertical-align: bottom;
+		}
+	}
+	.email_valid {
+		text-align: center;
+	}
+	.profile-address select {
+		width: 135px;
+	}
+	select {
+		margin: 0;
+		font-size: 100%;
+		cursor: pointer;
+		font-weight: normal;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		color: #555;
+		display: inline-block;
+		font-size: 14px;
+		height: 30px;
+		line-height: 30px;
+		padding: 4px 6px;
+		vertical-align: middle;
+	}
+	.rlf-tip-wrap {
+		font-size: 12px;
+		height: 30px;
+	}
+	#college {
+		display: inline-block;
+		height: 57px;
+		select {
+			margin-right: 10px;
+		}
+	}
+}

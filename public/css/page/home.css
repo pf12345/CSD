@@ -25,7 +25,7 @@
 .h_p_log_reg input[type=text],
 .h_p_log_reg input[type=password] {
   border: 1px solid #ccc;
-  padding: 5px 5px;
+  padding: 8px 5px;
   width: 200px;
 }
 .h_p_log_reg input[type=submit] {
@@ -114,6 +114,118 @@
 .home_container .message_board_container {
   height: 400px;
   width: 100%;
+}
+.board_content {
+  padding: 30px 20px 60px 20px;
+}
+.board_content > div {
+  height: 200px;
+  width: 220px;
+  display: inline-block;
+}
+.board_content .postit {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'Reenie Beanie';
+  font-size: 22px;
+  border-bottom-right-radius: 120px 15px;
+  display: inline-block;
+  background: #ffff88;
+  background: linear-gradient(135deg, #b7f267 81%, #b7f267 82%, #b7f267 82%, #b7f267 100%) !important;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
+  top: 20px;
+}
+.board_content .rotate10 {
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  /* IE 9 */
+  -webkit-transform: rotate(10deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(10deg);
+  /* Opera */
+  -moz-transform: rotate(10deg);
+  /* Firefox */
+  display: inline-block;
+}
+.board_content .rotate10 > div {
+  background: linear-gradient(135deg, #6f4c9d 81%, #6f4c9d 82%, #6f4c9d 82%, #6f4c9d 100%) !important;
+}
+.board_content .rotate-30 {
+  transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-30deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(-30deg);
+  /* Opera */
+  -moz-transform: rotate(-30deg);
+  /* Firefox */
+  display: inline-block;
+}
+.board_content .rotate-30 > div {
+  background: linear-gradient(135deg, #5fa3ca 81%, #5fa3ca 82%, #5fa3ca 82%, #5fa3ca 100%) !important;
+}
+.board_content .rotate30 {
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  /* IE 9 */
+  -webkit-transform: rotate(30deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(30deg);
+  /* Opera */
+  -moz-transform: rotate(30deg);
+  /* Firefox */
+  display: inline-block;
+}
+.board_content .rotate30 > div {
+  background: linear-gradient(135deg, #5fa3ca 81%, #5fa3ca 82%, #5fa3ca 82%, #5fa3ca 100%) !important;
+}
+.board_content .rotate20 {
+  transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  /* IE 9 */
+  -webkit-transform: rotate(20deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(20deg);
+  /* Opera */
+  -moz-transform: rotate(20deg);
+  /* Firefox */
+  display: inline-block;
+}
+.board_content .rotate20 > div {
+  background: linear-gradient(135deg, #cbda44 81%, #cbda44 82%, #cbda44 82%, #cbda44 100%) !important;
+}
+.board_content .rotate-10 {
+  transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-10deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(-10deg);
+  /* Opera */
+  -moz-transform: rotate(-10deg);
+  /* Firefox */
+  display: inline-block;
+}
+.board_content .rotate-10 > div {
+  background: linear-gradient(135deg, #dea415 81%, #dea415 82%, #dea415 82%, #dea415 100%) !important;
+}
+.board_content .rotate-20 {
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-20deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(-20deg);
+  /* Opera */
+  -moz-transform: rotate(-20deg);
+  /* Firefox */
+  display: inline-block;
+}
+.board_content .rotate-20 > div {
+  background: linear-gradient(135deg, #99cd46 81%, #99cd46 82%, #99cd46 82%, #99cd46 100%) !important;
 }
 .home_login .home_container {
   width: 800px;

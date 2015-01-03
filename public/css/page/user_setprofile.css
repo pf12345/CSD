@@ -1,0 +1,134 @@
+.user_setProfile .nav_list {
+  background-color: #fff;
+}
+.user_setProfile .nav_list ul li {
+  width: 215px;
+  height: 58px;
+  line-height: 60px;
+  border-bottom: 1px solid #e6e8e9;
+  cursor: pointer;
+  padding-left: 45px;
+  border-left: 2px solid #fff;
+  font-size: 14px;
+}
+.user_setProfile .nav_list ul li:hover {
+  color: #901a65;
+}
+.user_setProfile .nav_list ul li.current {
+  border-left: 2px solid #901a65;
+}
+.user_setProfile .personInfo .person_qianming {
+  height: 160px;
+}
+.user_setProfile .personInfo .person_qianming span {
+  vertical-align: top;
+}
+.user_setProfile .personInfo .person_qianming textarea {
+  border: 1px solid #e6e8e9;
+  width: 417px;
+}
+.user_setProfile .personInfo .save {
+  text-align: center;
+}
+.user_setProfile .personInfo .save input[type=button] {
+  width: 417px;
+  margin-left: 20px;
+}
+.user_setProfile .personAvatar,
+.user_setProfile .email_valid,
+.user_setProfile .change_pwd {
+  display: none;
+  padding-top: 30px;
+}
+.user_setProfile .change_pwd {
+  text-align: center;
+}
+.user_setProfile .change_pwd input[type=button] {
+  width: 417px;
+  margin-left: 110px;
+}
+.user_setProfile .change_content {
+  width: 740px;
+  background-color: #fff;
+  padding: 60px 60px;
+  box-sizing: border-box;
+}
+.user_setProfile .change_content p {
+  height: 40px;
+  padding-bottom: 30px;
+  line-height: 40px;
+}
+.user_setProfile input[type=text],
+.user_setProfile input[type=password],
+.user_setProfile input[type=date] {
+  width: 200px;
+  border: 1px solid #ccc;
+  width: 400px;
+  height: 24px;
+  line-height: 24px;
+  padding: 7px 7px 7px 8px;
+  font-size: 14px;
+  background: #ffffff;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color 0.2s;
+  -webkit-transition: border-color 0.2s;
+  -moz-transition: border-color 0.2s;
+  -o-transition: border-color 0.2s;
+  transition: padding 0.15s;
+  -webkit-transition: padding 0.15s;
+  -moz-transition: padding 0.15s;
+  -o-transition: padding 0.15s;
+  border-color: #d0d6d9;
+}
+.user_setProfile span {
+  margin-right: 10px;
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+.user_setProfile label {
+  margin-left: 5px;
+}
+.user_setProfile .personAvatar {
+  text-align: center;
+}
+.user_setProfile .personAvatar img {
+  vertical-align: middle;
+}
+.user_setProfile .personAvatar input[type=button] {
+  vertical-align: bottom;
+}
+.user_setProfile .email_valid {
+  text-align: center;
+}
+.user_setProfile .profile-address select {
+  width: 135px;
+}
+.user_setProfile select {
+  margin: 0;
+  font-size: 100%;
+  cursor: pointer;
+  font-weight: normal;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #555;
+  display: inline-block;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  padding: 4px 6px;
+  vertical-align: middle;
+}
+.user_setProfile .rlf-tip-wrap {
+  font-size: 12px;
+  height: 30px;
+}
+.user_setProfile #college {
+  display: inline-block;
+  height: 57px;
+}
+.user_setProfile #college select {
+  margin-right: 10px;
+}
